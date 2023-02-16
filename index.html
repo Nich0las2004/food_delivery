@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/23dc9051e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <ul class="nav-bar">
+          <li>Food Delivery</li>
+          <div class="buttons">
+            <button id="loginBtn">LOG IN</button>
+            <button id="signupBtn">SIGN UP</button>
+          </div>
+        </ul>
+      </nav>
+      <div class="welcome-page">
+        <div class="welcome-page-header">
+          <h1 id="welcome-text">
+            CREATE YOUR OWN FULLY AUTOMATED DELIVERY SYSTEM
+          </h1>
+          <div class="welcome-page-image">
+            <img
+              id="foodImg"
+              src="https://media.istockphoto.com/id/1308801026/vector/traditional-greek-salad-with-slices-of-feta-cheese-tomatoes-olives-flying-in-the-air-to-a.jpg?s=612x612&w=0&k=20&c=5C-Um2PktFYeLCzK3lLdXziZIRihUWcAfVBeF4vapME="
+            />
+          </div>
+        </div>
+      </div>
+      <div class="menu">
+        <h1 style="font-size: 3rem">MENU</h1>
+        <div class="cards">
+          <div class="card">
+            <p class="food-name">Kebab</p>
+            <p class="food-price">$10</p>
+            <img
+              id="kebab"
+              src="https://live.staticflickr.com/65535/50286072577_088aa598b4_b.jpg"
+            />
+            <button id="orderedKebab">Order now!</button>
+          </div>
+          <div class="card">
+            <p class="food-name">Pizza</p>
+            <p class="food-price">$20</p>
+            <img
+              id="pizza"
+              src="https://media02.stockfood.com/largepreviews/MzQ2MTY2NzM5/11166669-Plain-Cheese-Pizza-with-a-Slice-Removed-On-a-White-Background-From-Above.jpg"
+            />
+            <button id="orderedPizza">Order now!</button>
+          </div>
+          <div class="card">
+            <p class="food-name">Khinkali</p>
+            <p class="food-price">$30</p>
+            <img
+              id="khinkali"
+              src="https://img.freepik.com/premium-photo/traditional-georgian-dish-khinkali-with-meat-kalakuri-white-background-horizontal-no-people_322022-737.jpg?w=2000"
+            />
+            <button id="orderedKhinkali">Order now!</button>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-card">
+          <div class="contact-us">
+            <h2 style="color: var(--customBlue)">Contact us</h2>
+            <p style="margin-top: 30px">
+              Please, contact us if you are interested with our services or
+              leave contact information and we will call you back asap.
+            </p>
+            <p style="margin-top: 40px; font-size: 1.3rem">
+              <i class="fa-regular fa-envelope"></i> lorem@ipsum.com
+            </p>
+            <p style="margin-top: 20px; font-size: 1.3rem">
+              <i class="fa-sharp fa-solid fa-phone"></i> 123 456 789
+            </p>
+            <p style="margin-top: 90px">Follow us:</p>
+            <div class="follow-us-icons">
+              <button class="sMediaBtn">
+                <i class="fa-brands fa-facebook"></i>
+              </button>
+              <button class="sMediaBtn">
+                <i class="fa-brands fa-instagram"></i>
+              </button>
+              <button class="sMediaBtn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="contact"
+            style="background: var(--customBlue); padding: 15px"
+          >
+            <h2 style="color: white">Leave your contact</h2>
+            <div class="inputs">
+              <input type="text" class="input" placeholder="Company name" />
+              <input type="email" class="input" placeholder="Contact email" />
+              <input type="number" class="input" placeholder="Contact phone" />
+              <textarea style="height:100px;padding:10px" class="input" placeholder="Type message"></textarea>
+            </div>
+            <button id="sendBtn">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

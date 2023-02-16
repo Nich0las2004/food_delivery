@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+:root{
+    --customBlue: rgb(0, 94, 255);
+}
+li{
+    list-style-type: none;
+    font-size:2em;
+    white-space: nowrap;
+    color:rgb(255, 34, 0);
+    font-weight: 700;
+}
+nav{
+    position:sticky;
+    top:0;
+}
+.nav-bar{
+    width:100%;
+    height:8vh;
+    background:white;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.nav-bar li{
+    padding-left: 10vw;
+}
+
+.buttons{
+    white-space: nowrap;
+    margin-left:60vw;
+}
+.buttons > button{
+    border-radius: 10px;
+    font-size:large;
+    width:120px;
+    height:40px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    margin:10px;
+    color:white;
+}
+#loginBtn{
+    background:rgb(0, 162, 255);
+}
+#loginBtn:hover{
+    opacity: 0.8;
+}
+#signupBtn{
+    background:var(--customBlue);
+}
+#signupBtn:hover{
+    opacity: 0.8;
+}
+.welcome-page{
+    width:100%;
+    height:90vh;
+    display:flex;
+}
+.welcome-page-header{
+    width:50%;
+    height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex:1;
+}
+.welcome-page-image{
+    width:50%;
+    height:80vh;
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+#welcome-text{
+    height:40vh;
+    width:50%;
+    font-size:4em;
+    padding-left:2rem;
+}
+.menu{
+    width: 100%;
+    height: 80vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.cards{
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    border:3px solid black;
+    border-radius:20px;
+    width:20vw;
+    height:50vh;
+    margin:5%;
+}
+.card > img{
+    width:100%;
+    height:20vh;
+}
+.card > button{
+    width: 7rem;
+    border-radius: 10px;
+    height:3rem;
+    font-size:1.1rem;
+    padding: 5px 10px;
+    border: none;
+    color:white;
+    background:lightgreen;
+    cursor:pointer;
+    margin-top:5vh;
+    transition: background 0.5s;
+}
+.card > button:hover{
+    color:lightgreen;
+    background: white;
+    transform:scale(1.1);
+    border: 2px solid black;
+}
+.food-name, .food-price{
+    font-size:1.5rem;
+}
+.contact-info{
+    background:rgb(240, 240, 240);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.contact-card{
+    width:40vw;
+    height:25vw;
+    background:white;
+    border-radius:10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display:flex;
+}
+.contact-us{
+    width:50%;
+    height:100%;
+    flex:1;
+}
+.contact{
+    width:50%;
+    height:100%;
+    flex:1;
+    background: lightgray;
+    border-radius:0 10px 10px 0;
+}
+.sMediaBtn{
+    width:2rem;
+    height:2rem;
+    background: linear-gradient(to top right,lightblue,blue);
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.sMediaBtn:hover{
+    transform: scale(1.2)
+}
+.contact-us{
+    padding:15px;
+}
+#sendBtn{
+    width:70px;
+    height:30px;
+    color:var(--customBlue);
+    border-radius:20px;
+    border:none;
+    cursor: pointer;
+    transition:color .5s;
+}
+#sendBtn:hover{
+    background:var(--customBlue);
+    border:2px solid white;
+    color:white;
+}
+.inputs{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.input{
+    margin:5px;
+    border:3px solid white;
+    background:var(--customBlue);
+    height:40px;
+    border-radius:20px;
+}
+::placeholder{
+    padding-left:10px;
+    color:white;
+}
+.input:focus{
+    padding-left:10px;
+    color:white;
+}
